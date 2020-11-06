@@ -13,7 +13,7 @@ html {
 
 body {
   font-size: 1.4rem;
-  background-image: url(/images/bg-mobile.png);
+  background-image: url(images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -144,7 +144,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    background-image: url(/images/bg-desktop.png);
+    background-image: url(images/bg-desktop.png);
     background-color: hsl(229, 57%, 11%);
   }
 
