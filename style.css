@@ -50,7 +50,7 @@ body {
   border-radius: 15%;
   margin-right: 11px;
   width: 42px;
-  height: 42px;
+  height: 45px;
 }
 
 .fylo-loading {
@@ -140,6 +140,45 @@ body {
   font-weight: 700;
   color: grey;
   margin-left: 5px;
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+  .fylo-folders {
+    width: 45%;
+    height: 150px;
+    text-align: center;
+  }
+
+  .fylo-folders #logo-img {
+    padding: 10% 5% 0% 0%;
+    width: 120px;
+  }
+
+  .fylo-folders .folders {
+    padding: 5% 0% 3% 0%;
+  }
+
+  .fylo-loading {
+    padding: 3%;
+    height: 120px;
+  }
+
+  .loading-bar {
+    margin: 2% auto;
+  }
+
+  .bar {
+    margin-left: 2px;
+  }
+
+  .circle {
+    width: 3%;
+  }
+
+  .number-box {
+    left: 215px;
+    top: 75px;
+  }
 }
 
 @media (min-width: 768px) {
