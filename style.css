@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-size: 1.4rem;
+  background-image: url(/images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.fylo-folders {
+  background-color: hsl(228, 56%, 26%);
+  width: 85%;
+  height: 190px;
+  margin-bottom: 20px;
+  border-radius: 5% 40% 5% 5%;
+}
+
+.fylo-folders #logo-img {
+  padding: 15% 0% 3% 13%;
+  width: 160px;
+}
+
+.fylo-folders .folders {
+  padding: 3% 0% 10% 13%;
+}
+
+.fylo-folders .folders img {
+  padding: 4%;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 15%;
+  margin-right: 11px;
+  width: 42px;
+  height: 42px;
+}
+
+.fylo-loading {
+  background-color: hsl(228, 56%, 26%);
+  padding: 7% 3% 3% 3%;
+  width: 85%;
+  position: relative;
+  border-radius: 5%;
+  height: 140px;
+  color: #fff;
+  text-align: center;
+}
+
+.loading-bar {
+  height: 1.6rem;
+  margin: 5% auto 3%;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 16px;
+  width: 85%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  background: linear-gradient(
+    to right,
+    rgb(255, 163, 153) 0%,
+    rgb(255, 77, 151) 100%
+  );
+  position: absolute;
+  width: 75%;
+  height: 80%;
+  border-radius: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2px;
+}
+
+.circle {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 77%;
+  width: 5%;
+}
+
+.loading-gb {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.loading-gb span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.triangle {
+  display: none;
+}
+
+.number-box {
+  position: absolute;
+  left: 95px;
+  top: 100px;
+  background-color: #fff;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 140px;
+  justify-content: center;
+}
+
+#gb-numbers {
+  color: hsl(229, 57%, 11%);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#gb-left {
+  font-size: 10px;
+  font-weight: 700;
+  color: grey;
+  margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/images/bg-desktop.png);
+    background-color: hsl(229, 57%, 11%);
+  }
+
+  .main-section {
+    flex-direction: row;
+  }
+
+  .fylo-folders {
+    margin: 0 25px 0 35px;
+    width: 32%;
+    height: 150px;
+    border-radius: 5% 49% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fylo-folders #logo-img {
+    width: 140px;
+    padding: 0% 0 3% 13%;
+  }
+
+  .fylo-folders .folders {
+    padding: 5% 0 0% 11%;
+  }
+
+  .fylo-folders .folders img {
+    padding: 4%;
+    width: 36px;
+    height: 38px;
+  }
+
+  .fylo-loading {
+    padding: 4%;
+    position: relative;
+    width: 50%;
+    height: 110px;
+    text-align: inherit;
+    bottom: -20px;
+  }
+
+  .fylo-loading span {
+    font-size: 1.4rem;
+  }
+
+  .loading-bar {
+    margin: 3% auto 2%;
+    width: 100%;
+    height: 1.5rem;
+  }
+
+  .bar {
+    height: 68%;
+  }
+
+  .circle {
+    width: 4%;
+  }
+
+  .loading-gb {
+    width: 100%;
+  }
+
+  .loading-gb span {
+    font-weight: initial;
+    font-size: 1.2rem;
+  }
+
+  .number-box {
+    top: -40px;
+    left: 210px;
+  }
+
+  .triangle {
+    display: block;
+    height: 45px;
+    width: 65px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-image: linear-gradient(50deg, #11ffee00 48px, #fff 50px);
+  }
+}
+
+@media (min-width: 1020px) {
+  body {
+    background-size: contain;
+    background-position: 0% 120%;
+  }
+
+  .fylo-folders {
+    height: 200px;
+    width: 30%;
+    margin: 0 35px 0 25px;
+  }
+
+  .fylo-folders #logo-img {
+    width: 180px;
+  }
+
+  .fylo-folders .folders img {
+    padding: 11px;
+    width: 44px;
+    height: 49px;
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+
+  .fylo-loading {
+    padding: 2% 3%;
+    height: 140px;
+    bottom: -30px;
+  }
+
+  .fylo-loading span {
+    font-size: 1.8rem;
+  }
+
+  .bar {
+    margin-left: 3px;
+  }
+
+  .circle {
+    width: 2%;
+  }
+
+  .loading-gb span {
+    font-size: 1.2rem;
+  }
+
+  .number-box {
+    left: 350px;
+    top: -55px;
+  }
+
+  .triangle {
+    top: 55px;
+    right: 0px;
+  }
+
+  #gb-left {
+    font-size: 1.1rem;
+  }
+}
